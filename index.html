@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <a>View High Scores</a>
+        <button id="viewHS">View High Scores</button>
 
         <!-- timer -->
         <div id="time"></div> 
@@ -20,9 +20,12 @@
     <div class="container">
         <h1 id="question">Javascript Quiz</h1>
         <button class="options" id="start">Start</button>
-        <div id="subtext">Try to answer the folowing code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</div>
+        <div id="subtext">Try to answer the folowing code-related questions within the time limit. Keep in mind that incorrect answers will penalize your time by ten seconds!</div>
         <textarea id="textarea"></textarea>
         <button class="options" id="submit">Submit</button>
+
+        <button class="options" id="restart" value="Refresh Page" onclick="window.location.reload();">Restart</button>
+        <button class="options" id="clear">Clear Scores</button>
         <ul>
             <li><button class="options" id="op1">1</button></li>
             <li><button class="options" id="op2">2</button></li>
