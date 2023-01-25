@@ -120,6 +120,7 @@ function opClick(opNum) {
         score++;
         document.getElementById("foot").textContent = "Correct!";
     } else {
+        timer -= 10;
         document.getElementById("foot").textContent = "Wrong";
     }
     promtNum++;
